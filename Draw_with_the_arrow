@@ -1,0 +1,29 @@
+import turtle
+import keyboard
+
+d=turtle.Turtle()
+while True:
+    if keyboard.is_pressed("w"):
+        d.left(5)
+    elif keyboard.is_pressed("d"):
+        d.forward(10)
+    elif keyboard.is_pressed("s"):
+        d.penup()
+    elif keyboard.is_pressed("a"):
+        d.pendown()
+    elif keyboard.is_pressed("1"):
+        d.color("red")
+    elif keyboard.is_pressed("2"):
+        d.color("orange")
+    elif keyboard.is_pressed("3"):
+        d.color("yellow")
+    elif keyboard.is_pressed("4"):
+        d.color("green")
+    elif keyboard.is_pressed("5"):
+        d.color("blue")
+    elif keyboard.is_pressed("6"):
+        d.color("purple")
+    elif keyboard.is_pressed("0"):
+        d.color("black")
+    elif keyboard.is_pressed("e"):
+        d.right(5)
