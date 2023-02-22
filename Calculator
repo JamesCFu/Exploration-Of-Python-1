@@ -1,0 +1,18 @@
+import sys
+sys.set_int_max_str_digits(999999999)
+def calculator():
+    calculator = input('Enter a calculation: ')
+    c=eval(calculator)
+    print(c)
+    a = input('Do you want to do more calculations? ')
+
+    while a.lower() == 'yes':
+
+        calculator = input('Enter a calculation: ')
+        c = eval(calculator)
+        print(c)
+        a = input('Do you want to do more calculations?')
+
+
+    print('see you next time')
+calculator()
