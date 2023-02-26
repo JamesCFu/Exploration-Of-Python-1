@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import numpy as np
+def test01():
+    x = (np.array(range(200001)) -100000) / 100000.0
+    print(x)
+    y = 6 * x *x +x - 2
+    plt.plot(x, y)
+    z = [0.0] * len(x)
+    plt.plot(x, z)
+    plt.show()
+
+test01()
